@@ -1036,12 +1036,12 @@ private class InnerWebSocket: Hashable {
         if services.contains(.Voice) {
             rd.setProperty(NSStreamNetworkServiceTypeVoice, forKey: NSStreamNetworkServiceType)
             wr.setProperty(NSStreamNetworkServiceTypeVoice, forKey: NSStreamNetworkServiceType)
-        }
+        }/*
         if allowSelfSignedSSL {
             let prop: Dictionary<NSObject,NSObject> = [kCFStreamSSLPeerName: kCFNull, kCFStreamSSLValidatesCertificateChain: NSNumber(bool: false)]
             rd.setProperty(prop, forKey: kCFStreamPropertySSLSettings as String)
             wr.setProperty(prop, forKey: kCFStreamPropertySSLSettings as String)
-        }
+        }*/
         rd.delegate = delegate
         wr.delegate = delegate
         rd.scheduleInRunLoop(NSRunLoop.mainRunLoop(), forMode: NSDefaultRunLoopMode)

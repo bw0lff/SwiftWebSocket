@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.osx.platform          = :osx, '10.9'
   s.osx.deployment_target = "10.9"
+  s.watchos.deployment_target = "2"
   s.source_files          = "Source/*.swift"
   s.requires_arc          = true
   s.libraries             = 'z'
