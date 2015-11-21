@@ -48,7 +48,7 @@
 		03D70CDB1BDAC63600D245C3 /* Test-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D70CE81BDAC70100D245C3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D70CE91BDAC70100D245C3 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		CF40A6991BFFE40000BBEA8A /* SwiftWebSocket-WatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "SwiftWebSocket-WatchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF40A6991BFFE40000BBEA8A /* SwiftWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF40A69B1BFFE40000BBEA8A /* SwiftWebSocket-WatchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-WatchOS.h"; sourceTree = "<group>"; };
 		CF40A69D1BFFE40000BBEA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF40A6A21BFFE43D00BBEA8A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
@@ -121,7 +121,7 @@
 				D71949011B35E6130015C529 /* SwiftWebSocket.framework */,
 				03D70CCC1BDAC5EC00D245C3 /* Test-OSX.xctest */,
 				03D70CDB1BDAC63600D245C3 /* Test-iOS.xctest */,
-				CF40A6991BFFE40000BBEA8A /* SwiftWebSocket-WatchOS.framework */,
+				CF40A6991BFFE40000BBEA8A /* SwiftWebSocket.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,7 +253,7 @@
 			);
 			name = "SwiftWebSocket-WatchOS";
 			productName = "SwiftWebSocket-WatchOS";
-			productReference = CF40A6991BFFE40000BBEA8A /* SwiftWebSocket-WatchOS.framework */;
+			productReference = CF40A6991BFFE40000BBEA8A /* SwiftWebSocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D71949001B35E6130015C529 /* SwiftWebSocket-OSX */ = {
@@ -608,7 +608,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jm.SwiftWebSocket-WatchOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftWebSocket;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -628,7 +628,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jm.SwiftWebSocket-WatchOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftWebSocket;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -731,6 +731,7 @@
 				CF40A69F1BFFE40000BBEA8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D71949141B35E6160015C529 /* Build configuration list for PBXNativeTarget "SwiftWebSocket-OSX" */ = {
 			isa = XCConfigurationList;
